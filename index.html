@@ -5,181 +5,145 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link rel="icon" href="images/favicon.png"/>
 	</head>
+	<nav>
+		<button class="btn btn-dark" id="button1" style="color:white" >About Me</button>
+		<button class="btn btn-dark" id="button2" style="color:white">Projects</button>
+		<button class="btn btn-dark" id="button3" style="color:white">Achievements</button>
+	</nav>
 	<body class="landing">
-
-		<!-- Header -->
 			<header id="header" class="alt">
-				<nav id="nav">
-					<ul>
-						<li><a href="#about">About me</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#achievements">Achievements</a></li>
-					</ul>
-				</nav>
+				<div class = "banner">
+					<center>
+						<br><br><br><br>
+					<h1>Rishav Mazumdar</h1>
+					<br>
+					<h3><p>Backend Developer </p><p> Python Enthusiast</p></h3>
+					</center>	
+				</div>
 			</header>
-
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
-		<!-- Banner -->
-			<section id="banner">
-				<h2>Rishav Mazumdar</h2>
-				<p>Junior Developer </p><p> Python Enthusiast</p>
-				<ul class="actions">
-				</ul>
-			</section>
-
-			<!-- One -->
 			<div id = "about">
-				<section id="one" class="wrapper style1">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-									<h2></h2>
-									<div class = "image rounded">
-										<div class = "image fit captioned">
-											<img src= "images/pic1.jpg" alt = "I guess my picture should have been shown here"/>
-										</div>
-									</div>
-									<p>A software developer in learning stage</p>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<p>Hello, I am Rishav Mazumdar, an Undergraduate currently pursuing my B.Tech degree from Indian Institute of Information technology, Ranchi as an Electronics and Communication Engineer.
-								</p>
-
-								Although my field of study is based on electronic components and their working, I have developed my skills in coding due to strong interest and a desire to explore deep into the domain of software .
-								I have coded in the following languages :
-								<ul>
-									<li>Python</li>
-									<li>C++</li>
-									<li>C</li>
-								</ul>
-								<p>					
-								Apart from software field, I also have practised the tasks of a web developer. I have used the following tools as a part of being a Web Developer in the learning stage :
-								<ul>
-									<li>HTML and CSS</li>
-									<li>PHP for backend</li>
-									<li>SQL for database management</li>
-								</ul>
-								Along with the above skills, I have also used Arduino for a few projects including autonomous robots.
-								</p>		
-								In short, not limiting myself to my scope but trying my hand at whatever interests me, and developing new skills and experiences.
-							</div>
+				<br><br><br>
+				<div class="container">
+						<div class = "image fit captioned">
+							<img class="dp" src="images/pic1.jpg " alt = "I guess my picture should have been shown here"/>
 						</div>
-					</div>
-				</section>
+						<div >
+							<p>Hello, I am Rishav Mazumdar, an Undergraduate currently pursuing my B.Tech degree from Indian Institute of Information technology, Ranchi as an Electronics and Communication Engineer.
+							</p>
+							Although not being a CSE student , I have developed my skills in coding due to strong interest and a desire to explore deep into the domain of software .
+							I personally love to code in these languages:
+							<ul>
+								<li>Python</li>
+								<li>C++</li>
+							</ul>
+							<p>					
+								Apart from software field, I also developed an interest in web development(particularly more towards backend development). I have used the following tools in varoius projects:
+							<ul>
+								<li>HTML and CSS</li>
+								<li>PHP / SQL Stack</li>
+								<li>MERN Stack ( MongoDB , Express , React , NodeJs)</li>
+							</ul>
+							Along with the above skills, I have also used Arduino for a few projects including autonomous robots.<br>
+							In short, not limiting myself to my scope but trying my hand at whatever interests me, and developing new skills and experiences.
+						</div>
+					
+				  </div>
 			</div>
-			<!-- Two -->
+			<br><br><br><hr width="75%"></hr><br><br><br>
 			<div id = projects>
-				<section id="two" class="wrapper style2 special">
-					<div class="container">
-						<header class="major">
-							<h2>Projects </h2>
-							<p>Which I have worked on</p>
-						</header>
-						<div class="row 150%">
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/proj1.jpg" alt="Project display pic" />
-									<h3><b>Web based Winter Hoodie shopping portal<br><br></b><br>
-									   <a href= "https://github.com/RishavMz/Winter_hoodie_shopping_portal" class = "button special">Details</a>
-									</h3>
-								</div>
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="images/proj2.jpg" alt="Project display pic" />
-									<h3>A GUI based Images to PDF converter <br>(Using Python)<br><br>
-										<a href= "https://github.com/RishavMz/Image-To-PDF-using-Python" class = "button special">Details</a>
-									</h3>
-								</div>
-							</div>
-							
+				<div class="container">
+					<center><h2>Team Projects</h2><h4>(Which I have contributed to)</h4><br><br></center>
+					<div class="card-deck">
+						<div class="card card1">
+						  <img class="card-img-top" src="./images/Teamproj1.jpg" alt="Card image cap">
+						  <div class="card-body ct1">
+							<h5 class="card-title">Web based Event Organising / Broadcasting Platform</h5>
+							<p class="card-text">Designed a web based event broadcasting and organising platform where organisers can broadcast their events and connect to students.<br> This project was made using PHP / SQL</p>
+							<p class="card-text"><small class="text-muted">Worked in a team of 2</small></p>
+						  </div>
+						</div>
+						<div class="card card2">
+						  <img class="card-img-top" src="./images/noimage.jpg" alt="Card image cap">
+						  <div class="card-body ct2">
+							<h5 class="card-title">IIITR IEEE SB Website</h5>
+							<p class="card-text">Designed a Website for IEEE student branch of our Institute .<br>This project was made using MERN stack.</p>
+							<p class="card-text"><small class="text-muted">Worked in a team of 6</small></p>
+						  </div>
 						</div>
 						
-					</div>
-				</section>
+					  </div>
+				</div>
+				<br><br><br><hr width="75%"></hr><br><br><br>
+				<div class="container">
+					<center><h2>Solo Projects</h2><h4>(Which I have worked on)</h4><br><br></center>
+
+					<div class="card-deck">
+						<div class="card card11">
+						  <img class="card-img-top" src="./images/proj1.jpg" alt="Card image cap">
+						  <div class="card-body ct11">
+							<h5 class="card-title">Web based College winter hoodie shopping platfrom</h5>
+							<p class="card-text">Designed a Winter hoodie shopping portal for college students where students can place order for the hoodie as per their choice, and admin can have a list of all orders and payments.</p>
+						  </div>
+						</div>
+						<div class="card card12">
+						  <img class="card-img-top" src="./images/proj2.jpg" alt="Card image cap">
+						  <div class="card-body ct12">
+							<h5 class="card-title">Python based Image to PDF converter</h5>
+							<p class="card-text">A GUI based python application (using TKinter) to convert images into docx format and then into pdf format ( along with proper adjustments for image sizes)</p>
+						  </div>
+						</div>
+						
+					  </div>
+				</div>
 			</div>
-			<!-- Three -->
+			<br><br><br><hr width="75%"></hr><br><br><br>
 			<div id = "achievements">
-				<section id="three" class="wrapper style1">
-					<div class="container">
-						<header class="major special">
-							<h2>Achievements</h2>
-							<p></p>
-						</header>
-						<div class="feature-grid">
-							<div class="feature">
-								<div class="image rounded"><img src="images/ach1.jpg" alt="Achievement display pic" /></div>
-								<div class="content">
-									<header>
-										<h4>3 star coder in Codecehf</h4>
-										<p>Competitive coding</p>
-									</header>
-									<p>Achieved this milestone through determined effort in competitive coding.<br></p>
-								</div>
+				<center><h2>Achievements</h2><h4></h4><br><br></center>
+				<div class = "container">
+					<div class="feature-grid">
+						<div class="feature">
+							<div class="image"><img class="ach" src="images/ach1.jpg" alt="Achievement display pic" /></div>
+							<div class="content">
+								<header>
+									<h4>3 star coder in Codechef</h4>
+									<p>Competitive coding</p>
+								</header>
+								<p>Achieved this milestone through regular participation in competitive coding as a hobby.<br></p>
 							</div>
-							<div class="feature">
-								<div class="image rounded"><img src="images/ach2.jpg" alt="Achievement display pic" /></div>
-								<div class="content">
-									<header>
-										<h4>Developed arduino based robots </h4>
-										<p>Arduino</p>
-									</header>
-									<p>Worked in a team of 4 to develop an arduino based autonomous line follower, and a manual bluetooth controlled 4 wheel rover.</p>
-								</div>
-							</div>
-							
-							<div class="feature">
-								<div class="image rounded"><img src="images/ach4.jpg" alt="Achievement display pic" /></div>
-								<div class="content">
-									<header>
-										<h4>Participated in inter IIIT WebD hackathon</h4>
-										<p>Web Development</p>
-									</header>
-									<p>Worked in a team of 2 members to design an event organising portal for College students where institutes can post details about events and students can register themselves</p>
-								</div>
+						</div>
+						<div class="feature">
+							<div class="image"><img class="ach" src="images/ach2.jpg" alt="Achievement display pic" /></div>
+							<div class="content">
+								<header>
+									<h4>Developed arduino based robots </h4>
+									<p>Arduino</p>
+								</header>
+								<p>Worked in a team of 4 to develop an arduino based autonomous line follower, and a manual bluetooth controlled 4 wheel rover.</p>
 							</div>
 						</div>
 					</div>
-				</section>
+		     	</div>
+									
 			</div>
-			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
-					<div class="container">
-						<header class="major">
-							<h2>Thats all for now</h2>
-							<p>Would be updated soon . . .</p>
-						</header>
-						<ul class="actions">
-							<li><a href="#about" class="button special big">About me</a></li>
-							<li><a href="#projects" class="button special big">Projects</a></li>
-							<li><a href="#achievements" class="button special big">Achievements</a></li>
-						</ul>
-					</div>
-				</section>
-
-		<!-- Footer -->
+			<br><br><br><hr width="75%"></hr><br><br><br>
 			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="https://in.linkedin.com/in/rishav-mazumdar-38b869192?trk=people-guest_people_search-card&challengeId=AQHpKOhR36QA1wAAAXNCe_0kJ-nZixyGr9evn7GHtVdAEm7hSG-5zocsfmAxikt79KeCNmHORA5sVuiM3o3Wl48dD19lnMljyQ&submissionId=dc101358-38f9-2016-410a-4a8290f95427" class="icon fa-linkedin"></a></li>
-						<li><a href="https://github.com/RishavMz" class="icon fa-github"></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Made by Rishav Mazumdar</li>
-					</ul>
+				<div class="footer">
+					<br><hr width="75%"></hr>
+
+					<center><br>
+						<h2><a href="https://in.linkedin.com/in/rishav-mazumdar-38b869192?trk=people-guest_people_search-card&challengeId=AQHpKOhR36QA1wAAAXNCe_0kJ-nZixyGr9evn7GHtVdAEm7hSG-5zocsfmAxikt79KeCNmHORA5sVuiM3o3Wl48dD19lnMljyQ&submissionId=dc101358-38f9-2016-410a-4a8290f95427" class="icon fa-linkedin"></a>
+						<a href="https://github.com/RishavMz" class="icon fa-github"></a></h2>
+						<br><br><br><div class="icon fa-copyright">Made by Rishav Mazumdar</div><br><br>
+					</center>
 				</div>
 			</footer>
-
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/carddetails.js"></script>
+			<script src="assets/js/scroll.js"></script>
 	</body>
 </html>
