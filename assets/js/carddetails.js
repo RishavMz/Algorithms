@@ -17,7 +17,7 @@ $('.card1').hover(
 
 var $thisvalue2;
 var $prevvalue2;
-$card1text2 = '<b>Worked in a team of 6 members to design a Website for IEEE Student branch for our institute using MERN stack(MongoDB, Express , React, Nodejss).  </b>';
+$card1text2 = '<b>Worked in a team of 6 members to design a Website for IEEE Student branch for our institute using MERN stack(MongoDB, Express , React, NodeJs).  </b>';
 $('.ct2').hover(
 	function() {
 		$thisvalue2 = $(".ct2").html();
