@@ -1,7 +1,7 @@
 var $thisvalue1;
 var $prevvalue1;
 $card1text1 = '<b>Worked in a team of 2 members to design a web based event organising / broadcasting platform where organisers can upload details about their events, and communicate with students who can register themselves for the events they wish to participate in. There is also an option for admin support UI where the admin can manage the overall functioning of the site. </b>';
-$('.card1').hover(
+$('.ct1').hover(
 	function() {
 		$thisvalue1 = $(".ct1").html();
 		if($thisvalue1 != $card1text1){
@@ -32,7 +32,22 @@ $('.ct2').hover(
 	}
 );
 
-
+var $thisvalue3;
+var $prevvalue3;
+$card1text3 = '<b>Worked in a team of 4 members to design an arduino based line/wall follower and a bluetooth based mobile controlled 4 wheel rover using arduino microcontroller </b>';
+$('.ct3').hover(
+	function() {
+		$thisvalue3 = $(".ct3").html();
+		if($thisvalue3 != $card1text3){
+			$prevvalue3 = $thisvalue3;
+		}
+		//console.log($thisvalue2,$prevvalue2);
+		$(".ct3").html(""+$card1text3+"");
+	},
+	function() {
+		$(".ct3").html(""+$prevvalue3+"");
+	}
+);
 
 
 var $thisvalue11;
