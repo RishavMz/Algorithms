@@ -64,6 +64,13 @@ nav{
   position: absolute;
   right:250px;
 }
+.tools{
+  height:60px;
+  width:auto;
+  padding:5px;
+  margin:10px;
+}
+
 
 
 .feature-grid {
