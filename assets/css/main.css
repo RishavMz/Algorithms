@@ -71,7 +71,10 @@ nav{
   margin:10px;
 }
 
-
+#liza{
+  text-decoration: none;
+  color: white;
+}
 
 .feature-grid {
   position: relative;

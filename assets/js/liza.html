@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIZA</title>
+</head>
+<body>
+    <script src="../../assets/js/jquery.min.js"></script>
+
+    <script>
+        const list1 = ["Hi","Hello","Hiya","Hiii","Hey"]                                                                                                                                                                                                                                                                                                                                      ;              
+        const list2 = ["Nice to meet you","It would be interesting talking to you","Lets talk about anything","So, whatsup???","How you're doing???","How do you do?" ]                                                                                                                                                                                                                       ;            
+        const list3 = ["Yes","Yeah","Exactly","Makes sense","Obviously","I see","This seems right"]                                                                                                                                                                                                                                                                             ;         
+        const list4 = ["I didnt get that","Sorry???","I beg your pardon?"," May you repeat, please","I didnt understand what you say","Please be more specific","Please be more clear"]                                                                                                                                                                                                       ;         
+        const list5 = ["No","Maybe not","I dont think so","Maybe you should reconsider your point of view","Please think once again"]                                                                                                                                                                                                                                              ;             
+        const list6 = ["Please tell me more about it","I want to talk more","Lets talk about random things","I like talking to you","Please dont stop talking to me abruptly","Tell me more","Okayyyy","That seems nice","Well, that seems quite informative","Haha","LOL",":(",":)",":D",";)",":P","Your way of speaking seems familiar. Have we met before???","Lets not get into it"]      ;
+        const list7 = ["I would tell you later","Lets not ask personal Questions now","Maybe lets talk about that later","Quesstions in QnA session at end of MEET XD","Sorry, I wont answer that","IDK","I dont know","I dunno what to say","Maybe im not the right person to ask this","I dont know","I dont like too much of questions","Lets not get deep into it","I wont tell you ;)"]  ;
+        let name = "";
+
+
+    
+    </script>
+    <center>
+        <h2>
+            <br>
+            LIZA
+        </h2>
+        <h4>
+            A simple chatbot
+        </h4>
+    </center>
+    <div id="box">
+        <form id="form1">
+            Liza : Please tel me your name<br><br>
+            <input type="text" name="name" id="name">
+        <button type="submit" id="nameentry" >Go Ahead</button>
+        </form>
+        <br><br><br>        
+        <form id="form2">
+            <div id="chatting">
+
+            </div>
+            <input type = "text" id="value">
+            <button type="submit" id="send" >SEND</button>
+
+        </form>
+    </div>
+    <script>
+    $('document').ready(function(e){
+        $('#form1').show();
+        $('#form2').hide();
+    });    
+    $('#nameentry').click(function(e) {
+        e.preventDefault();
+        let name = document.getElementById('name').value;
+        $('#form1').hide();
+        $('#form2').show();
+        $('#chatting').html("LIZA :    "+list1[Math.floor(Math.random() * list1.length)]+" "+name+" "+list2[Math.floor(Math.random() * list2.length)]);
+        return false;
+    });
+    $('#send').click(function(e) {
+        e.preventDefault();
+        let chat = document.getElementById('value').value;
+        let tval = document.getElementById('chatting').innerHTML;
+        let lizachat = "";
+        if (chat.startsWith("why") || chat.startsWith("when") || chat.startsWith("where") || chat.startsWith("how") || chat.startsWith("what") || chat.startsWith("did") || chat.startsWith("do") || chat.startsWith("is") || chat.startsWith("are") )
+        {
+            lizachat = lizachat + list7[Math.floor(Math.random() * list7.length)];
+        }
+        else
+        {
+            li = [list3,list4,list5,list6];
+            lis = li[Math.floor(Math.random() * li.length)]
+            lizachat = lizachat + lis[Math.floor(Math.random() * lis.length)];
+        }
+        var messageBody = document.querySelector('#chatting');
+        messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
+        $('#chatting').html(tval+"<br><div id='sent'>You :  "+chat+"</div>"+"<br>LIZA :    "+lizachat+"<br>");
+        $('#value').val("");
+        return false;
+    });
+
+    </script>
+</body>
+<style>
+    #box{
+        margin-top: 6.5%;
+        margin-left: 12.5%;
+        border: 1px solid black ;
+        box-shadow: 5px 5px 10px  black ;
+        padding-top: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 15%;
+        margin-bottom: 12.5%;
+        margin-right: 12.5%;
+
+    }
+    #chatting{
+        overflow-y: scroll;
+        height:100px;
+    }
+    #sent{
+        text-align: right;
+        padding-right: 10px;
+    }
+</style>
+</html>
