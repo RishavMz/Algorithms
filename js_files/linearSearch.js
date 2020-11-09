@@ -1,0 +1,37 @@
+$(document).ready(function(){
+    var length = (Math.floor(Math.random()*10)+15);
+    var array = [];
+    for(var i=0;i<length;i++){
+        array.push(Math.floor(Math.random()*100));
+    }
+    var key = array[(Math.floor(Math.random()*10)+5)];
+    for(var i=0;i<length;i++){
+        $("#area").html($("#area").html()+"<span class = 'box' id= 'box"+i+"'>"+array[i]+"</span>");
+        if(i%15 == 14){
+            $("#area").html($("#area").html()+"<br><br><br>");
+        }
+    }
+    $("#area").html($("#area").html()+"<br><center><br><br><span class='go'>Key="+key+"<br><button id='search'>Search</button><button id='reset'>Reset</button><span></center>");
+    console.log(array);
+    $("#search").click(function(){
+        for(var j=0;j<length;j++)
+        {
+            var loc='#box'+j+'';
+            if(array[j]===key){
+                $(loc).removeClass("box");
+                $(loc).addClass("fbox");
+                console.log("found"+loc);    
+                break;
+            }
+            else{
+                $(loc).removeClass("box");
+                $(loc).addClass("sbox");
+                console.log(array[j]+""+loc);
+            }
+            
+        }
+    });
+    $("#reset").click(function(){
+        location.reload();
+    });
+});

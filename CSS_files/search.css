@@ -1,0 +1,35 @@
+.box
+{
+    background-color: blanchedalmond;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 16pt;
+    border: 2px solid brown;
+    position: relative;
+    padding: 10px ;
+}
+.sbox
+{
+    background-color: coral;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 16pt;
+    border: 2px solid brown;
+    position: relative;
+    padding: 10px ;
+
+}
+.fbox
+{
+    background-color: cyan;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 16pt;
+    border: 2px solid brown;
+    position: relative;
+    padding: 10px ;
+
+}

@@ -1,0 +1,25 @@
+#area
+{
+    margin:10%;
+    border: 5px solid black;
+    padding : 25px;
+}
+.go
+{
+    font-size: 20pt;
+    font-weight: bold;
+}
+#search
+{
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: chartreuse;
+
+}
+#reset
+{
+    font-size: 15pt;
+    font-weight: bold;
+    background-color:  mediumpurple;
+
+}
