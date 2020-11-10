@@ -30,9 +30,8 @@ $(document).ready(function(){
                 $(loc).removeClass("box");
                 $(loc).addClass("sbox");
                 console.log(array[j]+""+loc);
+                setTimeout(run,100);
             }
-            
-            setTimeout(run,500);
         }
         run();
     });
