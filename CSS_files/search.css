@@ -1,6 +1,7 @@
 .box
 {
     background-color: blanchedalmond;
+    color:black;
     height: 40px;
     width: 50px;
     text-align: center;
@@ -12,6 +13,7 @@
 .sbox
 {
     background-color: coral;
+    color:black;
     height: 40px;
     width: 50px;
     text-align: center;
@@ -24,6 +26,7 @@
 .fbox
 {
     background-color: cyan;
+    color:black;
     height: 40px;
     width: 50px;
     text-align: center;
@@ -36,6 +39,7 @@
 .nbox
 {
     background-color: red;
+    color:black;
     height: 40px;
     width: 50px;
     text-align: center;

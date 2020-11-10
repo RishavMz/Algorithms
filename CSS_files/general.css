@@ -1,10 +1,16 @@
+body{
+    background-color: black;
+}
 #area
 {
-    margin:10%;
+    margin:5%;
     border: 5px solid black;
-    padding : 25px;
+    padding : 15px;
+    padding-top: 25px;
+    background-color:brown;
+    color: white
 }
-.go
+.key
 {
     font-size: 20pt;
     font-weight: bold;
@@ -14,6 +20,10 @@
     font-size: 15pt;
     font-weight: bold;
     background-color: chartreuse;
+    margin: 25px;
+    border-radius: 100px;
+    padding: 5px 15px 5px 15px;
+    border: none;
 
 }
 #reset
@@ -21,6 +31,10 @@
     font-size: 15pt;
     font-weight: bold;
     background-color:  mediumpurple;
+    margin: 25px;
+    border-radius: 100px;
+    padding: 5px 15px 5px 15px;
+    border: none;
 
 }
 #sort
@@ -28,5 +42,49 @@
     font-size: 15pt;
     font-weight: bold;
     background-color: lightsalmon;
+    margin: 25px;
+    border-radius: 100px;
+    padding: 5px 15px 5px 15px;
+    border: none;
 
+}
+.dashboard{
+    margin:25px;
+    padding: 15px;
+    background-color: black;
+    height: 1000px;
+    color: goldenrod;
+}
+.navbtn{
+    background-color: greenyellow;
+    color: black;
+    border:none;
+    height: 35px;
+    width:150px;
+    border-radius: 15px;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 25px;
+    padding: 5px;
+
+}
+@media only screen and (max-device-width: 480px)
+{
+    #root{
+        visibility: hidden;
+    }
+    #error{
+        visibility: visible;
+        color: white;
+        font-size: 30pt;
+    }
+}
+@media only screen and (min-device-width: 480px)
+{
+    #error{
+        visibility: hidden;
+    }
+    #root{
+        visibility: visible;
+    }
 }

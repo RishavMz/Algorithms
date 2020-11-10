@@ -8,11 +8,11 @@ $(document).ready(function(){
     var key = array[(Math.floor(Math.random()*10)+5)];
     for(var i=0;i<length;i++){
         $("#area").html($("#area").html()+"<span class = 'box' id= 'box"+i+"'>"+array[i]+"</span>");
-        if(i%15 == 14){
+        if(i%16 == 15){
             $("#area").html($("#area").html()+"<br><br><br>");
         }
     }
-    $("#area").html($("#area").html()+"<br><center><br><br><span class='go'>Key="+key+"<br><button id='search'>Search</button><button id='reset'>Reset</button><span></center>");
+    $("#area").html($("#area").html()+"<br><center><br><br><span class='key'>Key = "+key+"<br><br><button id='search'>Search</button><button id='reset'>Reset</button><span></center>");
     console.log(array);
     $("#search").click(function(){
         var j=0;
