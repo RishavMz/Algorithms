@@ -1,3 +1,7 @@
+function timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 $(document).ready(function(){
     var length = (Math.floor(Math.random()*10)+15);
     var array = [];
@@ -14,22 +18,23 @@ $(document).ready(function(){
     $("#area").html($("#area").html()+"<br><center><br><br><span class='go'>Key="+key+"<br><button id='search'>Search</button><button id='reset'>Reset</button><span></center>");
     console.log(array);
     $("#search").click(function(){
-        for(var j=0;j<length;j++)
-        {
+        var j=0;
+            run =  function go() {
             var loc='#box'+j+'';
             if(array[j]===key){
                 $(loc).removeClass("box");
                 $(loc).addClass("fbox");
                 console.log("found"+loc);    
-                break;
             }
-            else{
+            else if(j++<=length){
                 $(loc).removeClass("box");
                 $(loc).addClass("sbox");
                 console.log(array[j]+""+loc);
             }
             
+            setTimeout(run,500);
         }
+        run();
     });
     $("#reset").click(function(){
         location.reload();
