@@ -33,3 +33,15 @@
     padding: 10px ;
 
 }
+.nbox
+{
+    background-color: red;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 16pt;
+    border: 2px solid brown;
+    position: relative;
+    padding: 10px ;
+
+}

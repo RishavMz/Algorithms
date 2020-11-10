@@ -1,6 +1,3 @@
-function timeout(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
 
 $(document).ready(function(){
     var length = (Math.floor(Math.random()*10)+15);
@@ -30,7 +27,7 @@ $(document).ready(function(){
                 $(loc).removeClass("box");
                 $(loc).addClass("sbox");
                 console.log(array[j]+""+loc);
-                setTimeout(run,100);
+                setTimeout(run,100);                    //The actual thing that is causing a delay
             }
         }
         run();
