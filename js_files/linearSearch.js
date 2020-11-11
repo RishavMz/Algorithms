@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
-    var length = (Math.floor(Math.random()*10)+15);
+    var length = (Math.floor(Math.random()*10)+50);
     var array = [];
     for(var i=0;i<length;i++){
         array.push(Math.floor(Math.random()*100));
     }
-    var key = array[(Math.floor(Math.random()*10)+5)];
+    var key = array[(Math.floor(Math.random()*50))];
     for(var i=0;i<length;i++){
         $("#area").html($("#area").html()+"<span class = 'box' id= 'box"+i+"'>"+array[i]+"</span>");
         if(i%16 == 15){
