@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    var length = (Math.floor(Math.random()*50));
+    var length = (Math.floor(Math.random()*50)+5);
     var array = [];
     for(var i=0;i<length;i++){
         array.push(Math.floor(Math.random()*100));
