@@ -83,6 +83,12 @@ body{
         color: black;
         font-size: 30pt;
         top: 25%;
+        position: absolute;
+        top: 20px;
+    }
+    #mobtopc{
+        width: 90%;
+        height: auto;
     }
 }
 @media only screen and (min-device-width: 480px)
