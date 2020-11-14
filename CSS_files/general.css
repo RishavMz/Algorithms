@@ -100,3 +100,30 @@ body{
         visibility: visible;
     }
 }
+#nav{
+    background-color: palegreen;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16pt;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#back{
+    position: absolute;
+    top: 15px;
+    right: 150px;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color:lightgoldenrodyellow;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    box-shadow: 2px 2px 2px black ;
+}
+.titl{
+    font-weight: bold;
+    font-family: cursive;
+}
