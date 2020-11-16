@@ -29,6 +29,18 @@ body{
     box-shadow: 2px 2px 2px black ;
 
 }
+#trav
+{
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: chartreuse;
+    margin: 25px;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    box-shadow: 2px 2px 2px black ;
+
+}
 #reset
 {
     font-size: 15pt;
@@ -64,7 +76,7 @@ body{
     background-color: greenyellow;
     color: black;
     border:none;
-    height: 35px;
+    height: flex;
     width:150px;
     border-radius: 15px;
     font-size: 14pt;
@@ -127,4 +139,44 @@ body{
     font-weight: bold;
     font-family: cursive;
     color: darkblue;
+}
+.cell{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    color: white;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 5px;
+}
+.cellb{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    color: black;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 5px;
+}
+.cellsp{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    color: red;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 5px;
+}
+.cellv{
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    color: yellow;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 5px;
+}
+.cellvis{
+    height: 10px;
+    width: 10px;
+    background-color: cyan;
+    color: cyan;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 5px 5px 5px;
 }

@@ -1,180 +1,40 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Rishav Mazumdar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		<link rel="icon" href="images/favicon.png"/>
-	</head>
-	<nav>
-		<button class="btn btn-dark" id="button1" style="color:white" >About Me</button>
-		<button class="btn btn-dark" id="button2" style="color:white">Projects</button>
-		<button class="btn btn-dark" id="button3" style="color:white">Achievements</button>
-	</nav>
-	<body class="landing">
-			<header id="header" class="alt">
-				<div class = "banner">
-					<center>
-						<br><br><br><br>
-					<h1>RISHAV MAZUMDAR</h1>
-					<br>
-					<h3><p>Web Developer </p><p> Python Enthusiast</p></h3>
-					</center>	
-				</div>
-			</header>
-			<div id = "about">
-				<br><br><br>
-				<div class="container">
-						<div class = "image fit captioned">
-							<img class="dp" src="images/pic1.jpg " alt = "I guess my picture should have been shown here"/>
-						</div>
-						<div >
-							<p>Hello, I am Rishav Mazumdar, an Undergraduate currently pursuing my B.Tech degree from Indian Institute of Information technology, Ranchi as an Electronics and Communication Engineer.
-							</p>
-							Although not being a CSE student , I have developed my skills in coding due to strong interest and a desire to explore deep into the domain of software .
-							I personally love to code in these languages:
-							<ul>
-								<li>Python</li>
-								<li>C++</li>
-							</ul>
-							<p>					
-								Apart from software field, I also developed an interest in web development(particularly more towards backend development). I have used the following tools in varoius projects:
-							<ul>
-								<li>HTML and CSS</li>
-								<li>PHP / SQL Stack</li>
-								<li>MERN Stack ( MongoDB , Express , React , NodeJs)</li>
-							</ul>
-							Along with the above skills, I have also used Arduino for a few projects including autonomous robots.<br>
-							In short, not limiting myself to my scope but trying my hand at whatever interests me, and developing new skills and experiences.
-						</div>
-					
-				  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS_files/general.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Visual</title>
+</head>
+<body>
+    <div id="root">
+        <div class = "dashboard">
+            <div class = "container">
+                <center><h2>Searching</h2>
+                <button class = "navbtn" onclick= 'window.location="stimulations/linearSearch.html"';>Linear Search</button>
+                <button class = "navbtn" onclick= 'window.location="stimulations/binarySearch.html"';>Binary Search</button>
+                </center>
+            </div>
+            <br><br>
+            <div class = "container">
+                <center><h2>Sorting</h2>
+                <button class = "navbtn" onclick= 'window.location="stimulations/selectionSort.html"';>Selection Sort</button>
+                <button class = "navbtn" onclick= 'window.location="stimulations/bubbleSort.html"';>Bubble Sort</button>
+                <button class = "navbtn" onclick= 'window.location="stimulations/insertionSort.html"';>Insertion Sort</button>
+                </center>
 			</div>
-			<br><br><br><hr width="75%"></hr><br><br><br>
-			<div id = projects>
-				<div class="container">
-					<center><h2>Team Projects</h2><h4>(Which I have worked on)</h4><br><br></center>			
-					  <div class="feature-grid">
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/Teamproj1.jpg" alt="project display pic" /></div>
-							<div class="content ct1">
-								<header>
-									<h4>Web based Event Organising / Broadcasting Platform</h4>
-									<p>Worked in a team of 2</p>
-								</header>
-								<p>Designed a dynamic Web based application where institutes can organise/ broadcast events and reach out to the participants.<br></p>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/noimage.jpg" alt="project display pic" /></div>
-							<div class="content ct2">
-								<header>
-									<h4>IIITR IEEE SB Website</h4>
-									<p>Worked in a team of 6</p>
-								</header>
-								<p>Designed a Website for IEEE student branch of our Institute .This project was made using MERN stack.<br></p>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/ach2.jpg" alt="Achievement display pic" /></div>
-							<div class="content ct3">
-								<header>
-									<h4>Developed arduino based robots </h4>
-									<p>Worked in a team of 4</p>
-								</header>
-								<p>Worked in a team of 4 to develop an arduino based autonomous line follower, and a manual bluetooth controlled 4 wheel rover.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<br><br><br><hr width="75%"></hr><br><br><br>
-				<div class="container">
-					<center><h2>Solo Projects</h2><h4>(Which I have worked on)</h4><br><br></center>
-					  <div class="feature-grid">
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/proj1.jpg" alt="project display pic" /></div>
-							<div class="content ct11">
-								<header>
-									<h4>Web based College winter hoodie shopping platfrom</h4>
-									<p>Web Development</p>
-								</header>
-								<p>Designed a Winter hoodie shopping portal for college students where students can place order for the hoodie as per their choice, and admin can have a list of all orders and payments.<br></p>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/proj2.jpg" alt="project display pic" /></div>
-							<div class="content ct12">
-								<header>
-									<h4>Python based Image to PDF converter</h4>
-									<p>Python Programming</p>
-								</header>
-								<p>A GUI based python application (using TKinter) to convert images into docx format and then into pdf format ( along with proper adjustments for image sizes)</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br><br><br><hr width="75%"></hr><br><br><br>
-			<div class="container">
-			<center><h2>Toolbox</h2><h4></h4><br><br></center>
-
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/languages/python.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/languages/cpp1.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/languages/c1.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/backend/php.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/backend/express.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/database/mysql.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/database/mongodb.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/html.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/css.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/bootstrap.jpg" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/javascript.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/jquery.jpg" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/frontend/react.jpg" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/tools/git.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/tools/github.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/tools/vscode.png" >
-			<img class="tools" src="https://raw.githubusercontent.com/RishavMz/RishavMz/master/images/tools/ubuntu.png" >
-			</div>
-			<br><br><br><hr width="75%"></hr><br><br><br>
-
-				<div id = "achievements">
-				<center><h2>Achievements</h2><h4></h4><br><br></center>
-				<div class = "container">
-					<div class="feature-grid">
-						<div class="feature">
-							<div class="image"><img class="ach" src="images/ach1.jpg" alt="Achievement display pic" /></div>
-							<div class="content">
-								<header>
-									<h4>3 star coder in Codechef</h4>
-									<p>Competitive coding</p>
-								</header>
-								<p>Achieved this milestone through regular participation in competitive coding as a hobby.<br></p>
-							</div>
-						</div>
-					</div>
-				 </div>
-				 
-									
-			</div>
-			<br><br><br><hr width="75%"></hr><br><br><br>
-			<footer id="footer">
-				<div class="footer">
-					<br><hr width="75%"></hr>
-
-					<center><br>
-						<h2><a href="https://in.linkedin.com/in/rishav-mazumdar-38b869192?trk=people-guest_people_search-card&challengeId=AQHpKOhR36QA1wAAAXNCe_0kJ-nZixyGr9evn7GHtVdAEm7hSG-5zocsfmAxikt79KeCNmHORA5sVuiM3o3Wl48dD19lnMljyQ&submissionId=dc101358-38f9-2016-410a-4a8290f95427" class="icon fa-linkedin"></a>
-						<a href="https://github.com/RishavMz" class="icon fa-github"></a></h2>
-						<br><br><br><div class="icon fa-copyright">Made by Rishav Mazumdar</div><br><br>
-					</center>
-				</div>
-			</footer>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/carddetails.js"></script>
-			<script src="assets/js/scroll.js"></script>
-	</body>
+			<div class = "container">
+                <center><h2>Pathfinder</h2>
+                <button class = "navbtn" onclick= 'window.location="stimulations/leftEdgePathfinder.html"';>Left Edge Follower</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="error">
+        <img id="mobtopc"src = "images/pc.png" >
+        We are working on mobile display for this website.<br>Until then, we request you to acces through laptop or PC.
+        
+    </div>
+</body>
 </html>
