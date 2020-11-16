@@ -22,6 +22,5 @@ The various algorithms covered in this project :
 
 
 
-        Author:
-        
+Author:       
         RishavMz
