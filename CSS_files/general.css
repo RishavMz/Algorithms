@@ -180,3 +180,7 @@ body{
     margin: 2px 2px 2px 2px;
     padding: 5px 5px 5px 5px;
 }
+.instr{
+    position: absolute;
+    top: 100px;
+}
