@@ -175,8 +175,8 @@ body{
 .cellvis{
     height: 10px;
     width: 10px;
-    background-color: cyan;
-    color: cyan;
+    background-color: lightgreen;
+    color: lightgreen;
     margin: 2px 2px 2px 2px;
     padding: 5px 5px 5px 5px;
 }
