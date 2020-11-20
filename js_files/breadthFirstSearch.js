@@ -22,6 +22,12 @@ function blocked(a , b){
         $(v).addClass("cellb");
         $(v).removeClass("cell");
     }
+    else if(grid[a][b]==10){
+        grid[a][b] = 0;
+        let v = "#cell_"+a+"_"+b+"";
+        $(v).addClass("cell");
+        $(v).removeClass("cellb");
+    }
 }
 
 $(document).ready(function(){

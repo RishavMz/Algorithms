@@ -22,6 +22,12 @@ function blocked(a , b){
         $(v).addClass("cellb");
         $(v).removeClass("cell");
     }
+    else if(grid[a][b]==10){
+        grid[a][b] = 0;
+        let v = "#cell_"+a+"_"+b+"";
+        $(v).addClass("cell");
+        $(v).removeClass("cellb");
+    }
 }
 
 $(document).ready(function(){
@@ -49,6 +55,24 @@ $(document).ready(function(){
         let prevy = tempy;
         let stop = 1;
         let stack = [];
+        let path = function traverse(){
+            if(stack.length >1){
+                tempx = stack[stack.length -1][0];
+                tempy = stack[stack.length -1][1];
+                $("#cell_"+tempx+"_"+tempy+"").addClass("cellsp2");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellv");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellvis");
+                stack.pop();
+                setTimeout(path,30);
+            }
+            else{
+                tempx = stack[stack.length -1][0];
+                tempy = stack[stack.length -1][1];
+                $("#cell_"+tempx+"_"+tempy+"").addClass("cellsp");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellv");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellvis");
+            }
+        }
         let pp = 0;
         stack.push([tempx,tempy]);
         let run = function go(){
@@ -63,6 +87,13 @@ $(document).ready(function(){
             }
             if((tempx === endx && tempy === endy )|| stack.length ===0 ){
                 stop = 0;
+                tempx = stack[stack.length -1][0];
+                tempy = stack[stack.length -1][1];
+                $("#cell_"+tempx+"_"+tempy+"").addClass("cellsp");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellv");
+                $("#cell_"+tempx+"_"+tempy+"").removeClass("cellvis");
+                stack.pop()
+                setTimeout(path,100);
             }
             else{
                 if(tempy< 39 && grid[tempx][tempy+1]<3){
