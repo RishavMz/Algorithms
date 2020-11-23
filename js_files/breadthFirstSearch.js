@@ -7,6 +7,7 @@ for(let i=0;i<10;i++){
     }
     grid.push(row);
 }
+let dp  = [];
 startx = Math.floor(Math.random()*10);
 starty = Math.floor(Math.random()*40);
 endx = Math.floor(Math.random()*10);
@@ -56,7 +57,27 @@ $(document).ready(function(){
         let stop = 1;
         let queue = [];
         let pp = 0;
+        var tmx ;
+        var tmy;
+        var it = 0;
         queue.push([tempx,tempy]);
+        let path = function trav(){
+            if(it === 0){
+                tmx = endx;
+                tmy = endy;
+                it += 1;
+            }
+            for(var i=0;i<dp.length;i++){
+                if(dp[i][0][0] === tmx && dp[i][0][1] === tmy){
+                    $("#cell_"+tmx+"_"+tmy+"").addClass("cellsp2");
+                    $("#cell_"+tmx+"_"+tmy+"").removeClass("cellvis");
+                    $("#cell_"+tmx+"_"+tmy+"").removeClass("cellv");
+                    tmx = dp[i][1][0];
+                    tmy = dp[i][1][1];
+                    setTimeout(path,100);
+                }
+            }
+        }
         let run = function go(){
             $("#cell_"+prevx+"_"+prevy+"").addClass("cellv");
             $("#cell_"+prevx+"_"+prevy+"").removeClass("cellvis");
@@ -69,6 +90,7 @@ $(document).ready(function(){
             }
             if((tempx === endx && tempy === endy )|| queue.length ===0 ){
                 stop = 0;
+                setTimeout(path,100);
             }
             else{
                 if(tempy< 39 && grid[tempx][tempy+1]<3){
@@ -76,6 +98,7 @@ $(document).ready(function(){
                     movey = 1;
 
                     tempy = tempy+1;
+                    dp.push([[tempx,tempy],[tempx,tempy-1]]);
                     grid[tempx][tempy] = 4;
                     $("#cell_"+tempx+"_"+tempy+"").addClass("cellvis");
                     $("#cell_"+tempx+"_"+tempy+"").removeClass("cell");
@@ -87,7 +110,7 @@ $(document).ready(function(){
                     movey = 0;
                     tempx = tempx-1;
                     grid[tempx][tempy] = 4;
-
+                    dp.push([[tempx,tempy],[tempx+1,tempy]]);
                     $("#cell_"+tempx+"_"+tempy+"").addClass("cellvis");
                     $("#cell_"+tempx+"_"+tempy+"").removeClass("cell");
                     queue.push([tempx,tempy]);
@@ -97,7 +120,7 @@ $(document).ready(function(){
                     movey = -1;
                     tempy = tempy-1;
                     grid[tempx][tempy] = 4;
-
+                    dp.push([[tempx,tempy],[tempx,tempy+1]]);
                     $("#cell_"+tempx+"_"+tempy+"").addClass("cellvis");
                     $("#cell_"+tempx+"_"+tempy+"").removeClass("cell");
                     queue.push([tempx,tempy]);
@@ -107,7 +130,7 @@ $(document).ready(function(){
                     movey = 0;
                     tempx = tempx+1;
                     grid[tempx][tempy] = 4;
-
+                    dp.push([[tempx,tempy],[tempx-1,tempy]]);
                     $("#cell_"+tempx+"_"+tempy+"").addClass("cellvis");
                     $("#cell_"+tempx+"_"+tempy+"").removeClass("cell");
                     queue.push([tempx,tempy]);
