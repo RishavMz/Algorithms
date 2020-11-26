@@ -25,7 +25,7 @@ $(document).ready(function(){
             }
             else if(j++<=length){
                 $(loc).removeClass("box");
-                $(loc).addClass("sbox");
+                $(loc).addClass("sboxbin");
                 console.log(array[j]+""+loc);
                 setTimeout(run,100);                    //The actual thing that is causing a delay
             }

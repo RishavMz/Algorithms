@@ -34,7 +34,7 @@ $(document).ready(function(){
                 for(var i=l;i<=(mid);i++){
                     var loc = "#box"+i;
                     $(loc).removeClass("box");
-                    $(loc).addClass("sbox");
+                    $(loc).addClass("sboxbin");
                 }
                 l=mid+1;
             }
@@ -45,7 +45,7 @@ $(document).ready(function(){
                 for(var i=mid+1;i<=r;i++){
                     var loc = "#box"+i;
                     $(loc).removeClass("box");
-                    $(loc).addClass("sbox");
+                    $(loc).addClass("sboxbin");
                 }
                 r = mid;
             }   
