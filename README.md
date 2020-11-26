@@ -19,6 +19,7 @@ The various algorithms covered in this project :
 5. Insertion Sort
 
 6. Depth First Search
+7. Breadth First Search
 
 
 
