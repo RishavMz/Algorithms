@@ -5,7 +5,7 @@ $("#button1").click(function() {
 });
 $("#button2").click(function() {
     $('html, body').animate({
-        scrollTop: $("#projects").offset().top	
+        scrollTop: $("#links").offset().top	
     }, 1000);
 });
 $("#button3").click(function() {

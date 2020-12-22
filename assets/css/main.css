@@ -2,7 +2,9 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
-
+.card-img-top{
+  padding: 25%;
+}
 .banner{
   height: 600px;
   background-image: url("../../images/banner.jpg");
@@ -49,17 +51,17 @@ nav{
   color: white;
   height:45px;
 }
-#button3{
+#button2{
   font-size: 14pt;
   position: absolute;
-  right: 7px;
+  right: 35px;
 }
-#button2{
+#button1{
   font-size: 14pt;
   position: absolute;
   right:150px;
 }
-#button1{
+#button3{
   font-size: 14pt;
   position: absolute;
   right:250px;
