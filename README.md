@@ -1,6 +1,6 @@
 
 #
-        https://rishavmz.github.io/Algorithms/
+   Link to Website: https://rishavmz.github.io/Algorithms/
 #
 
 This is a static web application which visualises the running of
