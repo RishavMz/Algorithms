@@ -1,3 +1,8 @@
+
+#
+        https://rishavmz.github.io/Algorithms/
+#
+
 This is a static web application which visualises the running of
 various algorithms which gives the viewers a visual representaion 
 of the steps which get executed behind the hood (Yes, behind the 
